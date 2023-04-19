@@ -12,7 +12,7 @@ app.use(express.json({limit : "10mb"}))
 const PORT =  8080
 
 // mongodb connection
-console.log(process.env.MOONODB_URL)
+// console.log(process.env.MOONODB_URL)
 mongoose.set('strictQuery' , false);
 mongoose
   .connect("mongodb+srv://amit:amit123@amitstore.dnbzoi2.mongodb.net/amitEcommerce?retryWrites=true&w=majority")
